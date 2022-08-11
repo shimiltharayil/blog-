@@ -1,0 +1,11 @@
+<%- include('parcels/header'); -%>
+    <h1><%=title%></h1>
+    <form action="/compose" method="post">
+        <label for="addTitle">Title</label><br>
+        <input name="addTitle" type="text" autocomplete="off"><br>
+        <label for="addContent">Content</label><br>
+        
+        <textarea i name="addContent" rows="4" cols="100" maxlength="200"></textarea><br>
+        <button class="btn btn-primary" type="submit">Publish</button>
+    </form>
+    <%- include('parcels/footer'); -%>

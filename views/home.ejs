@@ -1,0 +1,9 @@
+<%- include('parcels/header'); -%>
+    <h1><%=title%></h1>
+    <p><%=content%>
+    </p>
+    <%for(let i=0;i<posts.length;i++){%>
+     <% console.log(posts[i]);%>
+   <%}%> 
+        
+    <%- include('parcels/footer'); -%>
